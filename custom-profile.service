@@ -1,9 +1,11 @@
 [Unit]
-Description=Power Service
+Description=Custom Power Profiles Manager
 After=dbus.service
 
 [Service]
-ExecStart=/usr/bin/custom-power-manager
+Type=simple
+ExecStart=/usr/bin/python3 /usr/bin/custom-power-manager
+Restart=on-failure
 
 [Install]
-WantedBy=default.target
+WantedBy=multi-user.target
