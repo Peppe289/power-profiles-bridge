@@ -1,0 +1,9 @@
+[Unit]
+Description=Power Service
+After=network-online.target
+
+[Service]
+ExecStart=/usr/bin/custom-power-manager
+
+[Install]
+WantedBy=default.target
