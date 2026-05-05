@@ -6,7 +6,7 @@ pkgdesc="Custom Power Profiles Manager for Noctalia/Niri with auto battery switc
 arch=('any')
 url="https://github.com/Peppe289/power-profiles-bridge"
 license=('MIT')
-depends=('python' 'python-psutil' 'python-gobject' 'python-pydbus')
+depends=('python' 'python-psutil' 'python-gobject' 'python-pydbus' 'tuned')
 source=("git+${url}.git"
         "custom-profile.service"
         "net.hadess.PowerProfiles.conf")
