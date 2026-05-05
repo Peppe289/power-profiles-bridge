@@ -1,6 +1,6 @@
 [Unit]
 Description=Power Service
-After=network-online.target
+After=dbus.service
 
 [Service]
 ExecStart=/usr/bin/custom-power-manager
